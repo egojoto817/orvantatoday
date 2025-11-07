@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oviantotoday - Professional Garden Design & Landscaping Services</title>
-    <meta name="description" content="Transform your outdoor space with Oviantotoday's expert garden design and landscaping services. Creating beautiful, sustainable gardens for over 15 years.">
+    <title>Orvantatoday - Professional Garden Design & Landscaping Services</title>
+    <meta name="description" content="Transform your outdoor space with Orvantatoday's expert garden design and landscaping services. Specializing in sustainable gardens, plant selection, and outdoor living spaces for residential and commercial properties.">
     <style>
         * {
             margin: 0;
@@ -16,10 +16,12 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f8f9fa;
         }
 
-        .header-nav-x7k9 {
+        .header-nav-container-x7k9 {
             background: linear-gradient(135deg, #2d5016, #4a7c59);
+            color: white;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
@@ -28,7 +30,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .nav-container-m3p8 {
+        .nav-wrapper-m3p8 {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -38,29 +40,29 @@
         }
 
         .logo-brand-q5w2 {
-            color: white;
             font-size: 1.8rem;
             font-weight: bold;
-            text-decoration: none;
+            color: #fff;
         }
 
-        .nav-menu-r9t4 {
+        .navigation-links-r9t4 {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
 
-        .nav-menu-r9t4 a {
+        .nav-item-link-b6y1 {
             color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
+            cursor: pointer;
         }
 
-        .nav-menu-r9t4 a:hover {
+        .nav-item-link-b6y1:hover {
             color: #90c695;
         }
 
-        .hero-section-b8n1 {
+        .hero-section-z8n5 {
             background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(74, 124, 89, 0.7)), url('https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg') center/cover;
             height: 100vh;
             display: flex;
@@ -71,228 +73,174 @@
             margin-top: 70px;
         }
 
-        .hero-content-d6f3 {
+        .hero-content-l4d7 {
             max-width: 800px;
             padding: 2rem;
         }
 
-        .hero-title-l4s7 {
+        .hero-title-k2s9 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        .hero-subtitle-k2v9 {
+        .hero-subtitle-v6x3 {
             font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
 
-        .cta-button-h8j5 {
-            background: #90c695;
-            color: #2d5016;
-            padding: 1rem 2rem;
+        .cta-button-primary-h8j4 {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
             font-size: 1.1rem;
-            font-weight: bold;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: background 0.3s ease;
             text-decoration: none;
             display: inline-block;
         }
 
-        .cta-button-h8j5:hover {
-            background: #7ab87f;
-            transform: translateY(-2px);
+        .cta-button-primary-h8j4:hover {
+            background: #e55a2b;
         }
 
-        .services-section-p3x6 {
-            padding: 5rem 2rem;
-            background: #f8f9fa;
+        .services-section-a9f2 {
+            padding: 80px 0;
+            background: white;
         }
 
-        .container-max-z1y4 {
+        .container-wrapper-u3k7 {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        .section-title-n7m2 {
+        .section-title-p5w8 {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #2d5016;
         }
 
-        .services-grid-w5q8 {
+        .services-grid-n7q4 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
 
-        .service-card-e9r3 {
-            background: white;
+        .service-card-t9r6 {
+            background: #f8f9fa;
             padding: 2rem;
             border-radius: 10px;
+            text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
         }
 
-        .service-card-e9r3:hover {
+        .service-card-t9r6:hover {
             transform: translateY(-5px);
         }
 
-        .service-icon-t6u1 {
+        .service-icon-m4b8 {
             font-size: 3rem;
-            color: #4a7c59;
             margin-bottom: 1rem;
+            color: #4a7c59;
         }
 
-        .about-section-a4c7 {
-            padding: 5rem 2rem;
-            background: white;
+        .about-section-c6x1 {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f1f8e9, #e8f5e8);
         }
 
-        .about-content-i8o5 {
+        .about-content-grid-y2k5 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
         }
 
-        .about-text-v2n6 {
+        .about-text-block-s7n9 {
             font-size: 1.1rem;
             line-height: 1.8;
         }
 
-        .about-image-g7k4 {
+        .about-image-container-d4w3 {
+            text-align: center;
+        }
+
+        .about-image-d4w3 {
+            max-width: 100%;
             border-radius: 10px;
-            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        .about-image-g7k4 img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
+        .history-section-j8p2 {
+            padding: 80px 0;
+            background: white;
         }
 
-        .history-section-j9l3 {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        }
-
-        .timeline-container-x5m8 {
+        .timeline-container-f5q7 {
+            position: relative;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .timeline-item-c3q7 {
-            display: flex;
-            margin-bottom: 2rem;
-            background: white;
+        .timeline-item-x3v9 {
+            background: #f8f9fa;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+            border-left: 4px solid #4a7c59;
+            border-radius: 0 10px 10px 0;
         }
 
-        .timeline-year-f6h2 {
-            background: #4a7c59;
-            color: white;
-            padding: 1rem;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .timeline-year-k6m4 {
+            font-size: 1.2rem;
             font-weight: bold;
-            margin-right: 2rem;
-            flex-shrink: 0;
+            color: #2d5016;
+            margin-bottom: 0.5rem;
         }
 
-        .reviews-section-b1d9 {
-            padding: 5rem 2rem;
+        .expertise-section-w9l3 {
+            padding: 80px 0;
             background: #2d5016;
             color: white;
         }
 
-        .reviews-grid-s4p6 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .review-card-y8t5 {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-
-        .review-stars-k7n4 {
-            color: #ffd700;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .review-author-m2x9 {
-            margin-top: 1rem;
-            font-weight: bold;
-            opacity: 0.8;
-        }
-
-        .expertise-section-r5w3 {
-            padding: 5rem 2rem;
-            background: white;
-        }
-
-        .expertise-grid-l9q1 {
+        .expertise-grid-r7t5 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
 
-        .expertise-item-h3v7 {
+        .expertise-card-b2n8 {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .process-section-q4y6 {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .process-steps-h5k1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .process-step-z9x7 {
             text-align: center;
             padding: 2rem;
-            border: 2px solid #e9ecef;
-            border-radius: 10px;
-            transition: all 0.3s;
         }
 
-        .expertise-item-h3v7:hover {
-            border-color: #4a7c59;
-            background: #f8f9fa;
-        }
-
-        .contact-section-u6i2 {
-            padding: 5rem 2rem;
-            background: #f8f9fa;
-        }
-
-        .contact-grid-o4e8 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .contact-info-z7j6 {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .contact-item-n8k5 {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .contact-icon-p9l4 {
-            background: #4a7c59;
+        .step-number-v3m2 {
+            background: #ff6b35;
             color: white;
             width: 50px;
             height: 50px;
@@ -300,46 +248,132 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 1rem;
-        }
-
-        .phone-link-q3m7 {
-            color: #2d5016;
-            text-decoration: none;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
 
-        .phone-link-q3m7:hover {
-            color: #4a7c59;
+        .testimonials-section-l8p4 {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
         }
 
-        .footer-main-t1r8 {
-            background: #2d5016;
-            color: white;
-            padding: 3rem 2rem 1rem;
-        }
-
-        .footer-content-v5s2 {
-            max-width: 1200px;
-            margin: 0 auto;
+        .testimonials-grid-n6w9 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
-        .footer-section-w9x4 h3 {
+        .testimonial-card-s4r7 {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-text-g2k5 {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author-t7n3 {
+            font-weight: bold;
+            color: #2d5016;
+        }
+
+        .contact-section-u9q8 {
+            padding: 80px 0;
+            background: #2d5016;
+            color: white;
+        }
+
+        .contact-grid-m5x1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info-p8w4 {
+            font-size: 1.1rem;
+        }
+
+        .contact-item-d6y2 {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-form-k3v7 {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .form-group-j9s5 {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-input-a7f4 {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-textarea-h2k8 {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .footer-section-x4n6 {
+            background: #1a2f0e;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content-w7q3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column-r5t9 {
+            line-height: 1.8;
+        }
+
+        .footer-title-b8m1 {
+            font-size: 1.2rem;
             margin-bottom: 1rem;
             color: #90c695;
         }
 
-        .footer-bottom-a6c1 {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid #4a7c59;
-            margin-top: 2rem;
+        .footer-link-z3p7 {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .modal-overlay-d8f7 {
+        .footer-link-z3p7:hover {
+            color: #90c695;
+        }
+
+        .footer-bottom-l6x4 {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        .modal-overlay-q9w2 {
             display: none;
             position: fixed;
             top: 0;
@@ -350,7 +384,7 @@
             z-index: 2000;
         }
 
-        .modal-content-g2h9 {
+        .modal-content-v5k8 {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -364,461 +398,471 @@
             width: 90%;
         }
 
-        .modal-close-i4j3 {
+        .modal-close-n7j4 {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
+            top: 10px;
+            right: 15px;
             font-size: 2rem;
             cursor: pointer;
             color: #666;
         }
 
-        .sustainability-section-k8l6 {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+        .phone-link-c8r5 {
+            color: inherit;
+            text-decoration: none;
         }
 
-        .sustainability-grid-m7n5 {
+        .sustainability-section-f4m9 {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f1f8e9, #e8f5e8);
+        }
+
+        .sustainability-grid-h7p1 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
-        .sustainability-card-p4q2 {
+        .sustainability-card-k2w6 {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            border-left: 5px solid #4a7c59;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        .process-section-r1s9 {
-            padding: 5rem 2rem;
+        .plant-care-section-y8n3 {
+            padding: 80px 0;
             background: white;
         }
 
-        .process-steps-t6u3 {
+        .care-tips-grid-s6q7 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
-        .process-step-v8w7 {
-            text-align: center;
+        .care-tip-card-m9x4 {
+            background: #f8f9fa;
             padding: 2rem;
-            position: relative;
-        }
-
-        .step-number-x2y5 {
-            background: #4a7c59;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #4a7c59;
         }
 
         @media (max-width: 768px) {
-            .nav-menu-r9t4 {
-                flex-direction: column;
-                gap: 1rem;
+            .navigation-links-r9t4 {
+                display: none;
             }
             
-            .hero-title-l4s7 {
+            .hero-title-k2s9 {
                 font-size: 2.5rem;
             }
             
-            .about-content-i8o5,
-            .contact-grid-o4e8 {
+            .about-content-grid-y2k5,
+            .contact-grid-m5x1 {
                 grid-template-columns: 1fr;
             }
             
-            .timeline-item-c3q7 {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .timeline-year-f6h2 {
-                margin-right: 0;
-                margin-bottom: 1rem;
+            .nav-wrapper-m3p8 {
+                padding: 0 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <header class="header-nav-x7k9">
-        <nav class="nav-container-m3p8">
-            <a href="#home" class="logo-brand-q5w2">Oviantotoday</a>
-            <ul class="nav-menu-r9t4">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#sustainability">Sustainability</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header-nav-container-x7k9">
+        <nav class="nav-wrapper-m3p8">
+            <div class="logo-brand-q5w2">Orvantatoday</div>
+            <ul class="navigation-links-r9t4">
+                <li><a href="#services" class="nav-item-link-b6y1">Services</a></li>
+                <li><a href="#about" class="nav-item-link-b6y1">About</a></li>
+                <li><a href="#history" class="nav-item-link-b6y1">History</a></li>
+                <li><a href="#expertise" class="nav-item-link-b6y1">Expertise</a></li>
+                <li><a href="#process" class="nav-item-link-b6y1">Process</a></li>
+                <li><a href="#sustainability" class="nav-item-link-b6y1">Sustainability</a></li>
+                <li><a href="#plant-care" class="nav-item-link-b6y1">Plant Care</a></li>
+                <li><a href="#testimonials" class="nav-item-link-b6y1">Reviews</a></li>
+                <li><a href="#contact" class="nav-item-link-b6y1">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero-section-b8n1">
-        <div class="hero-content-d6f3">
-            <h1 class="hero-title-l4s7">Transform Your Outdoor Space</h1>
-            <p class="hero-subtitle-k2v9">Creating beautiful, functional gardens that bring your vision to life with expert landscaping and thoughtful design</p>
-            <a href="#contact" class="cta-button-h8j5">Start Your Garden Journey</a>
+    <section class="hero-section-z8n5">
+        <div class="hero-content-l4d7">
+            <h1 class="hero-title-k2s9">Transform Your Outdoor Space</h1>
+            <p class="hero-subtitle-v6x3">Expert garden design and landscaping services that bring your vision to life with sustainable, beautiful solutions for every outdoor space.</p>
+            <a href="#contact" class="cta-button-primary-h8j4">Get Started Today</a>
         </div>
     </section>
 
-    <section id="services" class="services-section-p3x6">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Our Garden Services</h2>
-            <div class="services-grid-w5q8">
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">🌿</div>
-                    <h3>Garden Planning</h3>
-                    <p>Comprehensive garden design and planning services tailored to your space, climate, and preferences. We create detailed layouts that maximize beauty and functionality.</p>
+    <section id="services" class="services-section-a9f2">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Our Garden Design Services</h2>
+            <div class="services-grid-n7q4">
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">🌿</div>
+                    <h3>Garden Planning & Design</h3>
+                    <p>Complete garden design solutions from concept to completion. We create detailed plans that maximize your space's potential while reflecting your personal style and needs.</p>
                 </div>
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">🌱</div>
-                    <h3>Plant Selection</h3>
-                    <p>Expert guidance in choosing the right plants for your specific conditions. We consider soil type, sunlight, water requirements, and seasonal interest.</p>
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">🌱</div>
+                    <h3>Plant Selection & Installation</h3>
+                    <p>Expert plant selection based on your climate, soil conditions, and maintenance preferences. We ensure every plant thrives in its designated location.</p>
                 </div>
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">🏡</div>
-                    <h3>Landscape Installation</h3>
-                    <p>Professional installation of hardscaping elements, irrigation systems, and plant materials. Quality workmanship with attention to every detail.</p>
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">🏡</div>
+                    <h3>Landscape Architecture</h3>
+                    <p>Comprehensive landscape architecture services including hardscaping, pathways, water features, and outdoor living spaces that complement your garden design.</p>
                 </div>
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">💧</div>
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">🌳</div>
+                    <h3>Tree & Shrub Care</h3>
+                    <p>Professional tree and shrub selection, planting, and ongoing care services to ensure healthy growth and longevity of your landscape investments.</p>
+                </div>
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">💧</div>
+                    <h3>Irrigation Systems</h3>
+                    <p>Efficient irrigation system design and installation to keep your garden healthy while conserving water and reducing maintenance requirements.</p>
+                </div>
+                <div class="service-card-t9r6">
+                    <div class="service-icon-m4b8">🌺</div>
+                    <h3>Seasonal Garden Care</h3>
+                    <p>Year-round garden maintenance services including seasonal plantings, pruning, fertilization, and pest management to keep your garden looking its best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section-c6x1">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">About Orvantatoday</h2>
+            <div class="about-content-grid-y2k5">
+                <div class="about-text-block-s7n9">
+                    <p>At Orvantatoday, we believe that every outdoor space has the potential to become a beautiful, functional garden that enhances your quality of life. Our team of experienced garden designers and landscaping professionals brings creativity, expertise, and passion to every project.</p>
+                    
+                    <p>We specialize in creating sustainable garden solutions that work with nature rather than against it. From small urban balconies to expansive estate grounds, we tailor our approach to meet your specific needs, budget, and vision.</p>
+                    
+                    <p>Our commitment to excellence extends beyond the initial design and installation. We provide ongoing support and maintenance services to ensure your garden continues to thrive and evolve beautifully over time.</p>
+                </div>
+                <div class="about-image-container-d4w3">
+                    <img src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg" alt="Beautiful garden landscape design" class="about-image-d4w3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history-section-j8p2">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Our Journey</h2>
+            <div class="timeline-container-f5q7">
+                <div class="timeline-item-x3v9">
+                    <div class="timeline-year-k6m4">2015</div>
+                    <h3>Company Founded</h3>
+                    <p>Orvantatoday was established with a vision to transform outdoor spaces through innovative garden design. Started as a small team of passionate landscapers serving local residential clients.</p>
+                </div>
+                <div class="timeline-item-x3v9">
+                    <div class="timeline-year-k6m4">2017</div>
+                    <h3>Sustainable Focus</h3>
+                    <p>Expanded our services to include eco-friendly and sustainable gardening practices. Introduced native plant specialization and water-efficient irrigation systems to our service offerings.</p>
+                </div>
+                <div class="timeline-item-x3v9">
+                    <div class="timeline-year-k6m4">2019</div>
+                    <h3>Commercial Expansion</h3>
+                    <p>Began serving commercial clients including office complexes, restaurants, and public spaces. Developed expertise in large-scale landscape architecture and maintenance programs.</p>
+                </div>
+                <div class="timeline-item-x3v9">
+                    <div class="timeline-year-k6m4">2021</div>
+                    <h3>Technology Integration</h3>
+                    <p>Integrated advanced design software and drone surveying technology to provide more accurate planning and visualization services for our clients' projects.</p>
+                </div>
+                <div class="timeline-item-x3v9">
+                    <div class="timeline-year-k6m4">2023</div>
+                    <h3>Award Recognition</h3>
+                    <p>Received multiple industry awards for outstanding garden design and environmental stewardship. Expanded team to include certified arborists and soil specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="expertise-section-w9l3">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Areas of Expertise</h2>
+            <div class="expertise-grid-r7t5">
+                <div class="expertise-card-b2n8">
+                    <h3>Native Plant Gardens</h3>
+                    <p>Specializing in indigenous plant species that thrive naturally in local conditions while supporting local wildlife and reducing maintenance needs.</p>
+                </div>
+                <div class="expertise-card-b2n8">
+                    <h3>Edible Landscapes</h3>
+                    <p>Creating beautiful and productive gardens that combine ornamental plants with herbs, vegetables, and fruit trees for both beauty and harvest.</p>
+                </div>
+                <div class="expertise-card-b2n8">
                     <h3>Water Features</h3>
-                    <p>Design and installation of fountains, ponds, and water gardens that add tranquility and visual interest to your outdoor space.</p>
+                    <p>Designing and installing ponds, fountains, streams, and rain gardens that add tranquility and ecological value to your outdoor space.</p>
                 </div>
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">🌳</div>
-                    <h3>Tree Care</h3>
-                    <p>Professional tree planting, pruning, and maintenance services to keep your trees healthy and your landscape looking its best.</p>
+                <div class="expertise-card-b2n8">
+                    <h3>Pollinator Gardens</h3>
+                    <p>Creating habitats that support bees, butterflies, and other beneficial insects while providing year-round color and interest in your garden.</p>
                 </div>
-                <div class="service-card-e9r3">
-                    <div class="service-icon-t6u1">🌸</div>
-                    <h3>Seasonal Maintenance</h3>
-                    <p>Year-round garden care including pruning, fertilizing, pest management, and seasonal plantings to keep your garden thriving.</p>
+                <div class="expertise-card-b2n8">
+                    <h3>Shade Gardens</h3>
+                    <p>Transforming challenging shaded areas into lush, vibrant spaces using plants that thrive in low-light conditions.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-section-a4c7">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">About Oviantotoday</h2>
-            <div class="about-content-i8o5">
-                <div class="about-text-v2n6">
-                    <p>At Oviantotoday, we believe that every outdoor space has the potential to become a beautiful, functional garden that enhances your quality of life. Our team of experienced garden designers and landscaping professionals has been transforming outdoor spaces for over 15 years.</p>
-                    
-                    <p>We specialize in creating sustainable, low-maintenance gardens that reflect your personal style while working harmoniously with the natural environment. From small urban balconies to expansive country estates, we approach each project with creativity, expertise, and attention to detail.</p>
-                    
-                    <p>Our commitment to quality craftsmanship and customer satisfaction has earned us a reputation as one of the most trusted garden design companies in the region. We take pride in building lasting relationships with our clients and watching their gardens flourish year after year.</p>
-                </div>
-                <div class="about-image-g7k4">
-                    <img src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg" alt="Beautiful garden landscape design">
+                <div class="expertise-card-b2n8">
+                    <h3>Rock Gardens</h3>
+                    <p>Designing alpine and rock gardens that showcase drought-tolerant plants and create stunning focal points with natural stone elements.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="history" class="history-section-j9l3">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Our Journey</h2>
-            <div class="timeline-container-x5m8">
-                <div class="timeline-item-c3q7">
-                    <div class="timeline-year-f6h2">2008</div>
-                    <div>
-                        <h3>The Beginning</h3>
-                        <p>Founded by master gardener Sarah Chen, Oviantotoday started as a small residential garden design service with a focus on sustainable landscaping practices.</p>
-                    </div>
-                </div>
-                <div class="timeline-item-c3q7">
-                    <div class="timeline-year-f6h2">2012</div>
-                    <div>
-                        <h3>Team Expansion</h3>
-                        <p>Added certified landscape architects and horticulturists to our team, allowing us to take on larger commercial projects and specialized garden installations.</p>
-                    </div>
-                </div>
-                <div class="timeline-item-c3q7">
-                    <div class="timeline-year-f6h2">2016</div>
-                    <div>
-                        <h3>Award Recognition</h3>
-                        <p>Received the Regional Landscape Excellence Award for our innovative approach to drought-resistant garden design and water conservation techniques.</p>
-                    </div>
-                </div>
-                <div class="timeline-item-c3q7">
-                    <div class="timeline-year-f6h2">2020</div>
-                    <div>
-                        <h3>Digital Innovation</h3>
-                        <p>Launched our 3D garden visualization service, allowing clients to see their future gardens before installation begins.</p>
-                    </div>
-                </div>
-                <div class="timeline-item-c3q7">
-                    <div class="timeline-year-f6h2">2023</div>
-                    <div>
-                        <h3>Sustainable Future</h3>
-                        <p>Achieved carbon-neutral certification and expanded our native plant propagation program, growing over 500 varieties of local species.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sustainability" class="sustainability-section-k8l6">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Sustainable Gardening</h2>
-            <div class="sustainability-grid-m7n5">
-                <div class="sustainability-card-p4q2">
-                    <h3>🌍 Eco-Friendly Practices</h3>
-                    <p>We prioritize environmentally responsible gardening methods, using organic fertilizers, natural pest control, and water-efficient irrigation systems to minimize environmental impact.</p>
-                </div>
-                <div class="sustainability-card-p4q2">
-                    <h3>🦋 Native Plant Focus</h3>
-                    <p>Our designs emphasize native and adapted plants that support local wildlife, require less water, and thrive in regional climate conditions without excessive maintenance.</p>
-                </div>
-                <div class="sustainability-card-p4q2">
-                    <h3>♻️ Waste Reduction</h3>
-                    <p>We implement composting systems, rainwater harvesting, and material recycling programs to create closed-loop garden ecosystems that minimize waste.</p>
-                </div>
-                <div class="sustainability-card-p4q2">
-                    <h3>🌱 Soil Health</h3>
-                    <p>Building healthy soil through organic matter addition, beneficial microorganism cultivation, and natural soil amendment techniques for long-term garden vitality.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="process" class="process-section-r1s9">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Our Design Process</h2>
-            <div class="process-steps-t6u3">
-                <div class="process-step-v8w7">
-                    <div class="step-number-x2y5">1</div>
+    <section id="process" class="process-section-q4y6">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Our Design Process</h2>
+            <div class="process-steps-h5k1">
+                <div class="process-step-z9x7">
+                    <div class="step-number-v3m2">1</div>
                     <h3>Initial Consultation</h3>
-                    <p>We meet with you to discuss your vision, assess your space, and understand your lifestyle needs and preferences.</p>
+                    <p>We meet with you to discuss your vision, needs, budget, and timeline. Site assessment and soil analysis are conducted during this phase.</p>
                 </div>
-                <div class="process-step-v8w7">
-                    <div class="step-number-x2y5">2</div>
-                    <h3>Site Analysis</h3>
-                    <p>Comprehensive evaluation of soil conditions, drainage, sunlight patterns, and existing vegetation to inform our design.</p>
-                </div>
-                <div class="process-step-v8w7">
-                    <div class="step-number-x2y5">3</div>
+                <div class="process-step-z9x7">
+                    <div class="step-number-v3m2">2</div>
                     <h3>Design Development</h3>
-                    <p>Creation of detailed plans, plant selections, and 3D visualizations to bring your garden vision to life.</p>
+                    <p>Our team creates detailed design plans including plant selections, hardscape elements, and seasonal interest considerations.</p>
                 </div>
-                <div class="process-step-v8w7">
-                    <div class="step-number-x2y5">4</div>
+                <div class="process-step-z9x7">
+                    <div class="step-number-v3m2">3</div>
+                    <h3>Client Review</h3>
+                    <p>We present the design concepts and make revisions based on your feedback to ensure the final plan meets all your expectations.</p>
+                </div>
+                <div class="process-step-z9x7">
+                    <div class="step-number-v3m2">4</div>
                     <h3>Installation</h3>
-                    <p>Professional implementation of the design with quality materials and expert craftsmanship.</p>
+                    <p>Professional installation of all garden elements including plants, hardscaping, irrigation systems, and any special features.</p>
                 </div>
-                <div class="process-step-v8w7">
-                    <div class="step-number-x2y5">5</div>
-                    <h3>Ongoing Care</h3>
-                    <p>Maintenance guidance and optional care services to ensure your garden continues to thrive.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="expertise-section-r5w3">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Areas of Expertise</h2>
-            <div class="expertise-grid-l9q1">
-                <div class="expertise-item-h3v7">
-                    <h3>🏠 Residential Gardens</h3>
-                    <p>Custom home garden designs that enhance curb appeal and create beautiful outdoor living spaces for families.</p>
-                </div>
-                <div class="expertise-item-h3v7">
-                    <h3>🏢 Commercial Landscapes</h3>
-                    <p>Professional landscaping for businesses, offices, and public spaces that create welcoming environments.</p>
-                </div>
-                <div class="expertise-item-h3v7">
-                    <h3>🌿 Herb Gardens</h3>
-                    <p>Functional and beautiful herb garden designs for culinary enthusiasts and wellness-focused gardeners.</p>
-                </div>
-                <div class="expertise-item-h3v7">
-                    <h3>🌺 Perennial Borders</h3>
-                    <p>Stunning perennial garden designs that provide year-round interest with seasonal color changes.</p>
-                </div>
-                <div class="expertise-item-h3v7">
-                    <h3>🌵 Drought-Tolerant Gardens</h3>
-                    <p>Water-wise garden solutions featuring succulents, native plants, and efficient irrigation systems.</p>
-                </div>
-                <div class="expertise-item-h3v7">
-                    <h3>🌙 Moon Gardens</h3>
-                    <p>Evening garden designs featuring white and silver plants that glow in moonlight with fragrant night-blooming flowers.</p>
+                <div class="process-step-z9x7">
+                    <div class="step-number-v3m2">5</div>
+                    <h3>Establishment Care</h3>
+                    <p>Follow-up care and monitoring during the critical establishment period to ensure all plants and systems are thriving.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reviews" class="reviews-section-b1d9">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">What Our Clients Say</h2>
-            <div class="reviews-grid-s4p6">
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"Oviantotoday transformed our backyard into a stunning oasis. Their attention to detail and plant knowledge is exceptional. Two years later, our garden still looks amazing!"</p>
-                    <div class="review-author-m2x9">- Jennifer Martinez</div>
+    <section id="sustainability" class="sustainability-section-f4m9">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Sustainable Gardening Practices</h2>
+            <div class="sustainability-grid-h7p1">
+                <div class="sustainability-card-k2w6">
+                    <h3>🌍 Eco-Friendly Materials</h3>
+                    <p>We prioritize recycled, locally-sourced, and sustainable materials in all our projects. From reclaimed wood to permeable paving stones, every choice supports environmental health.</p>
                 </div>
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"Professional, creative, and reliable. They designed a beautiful front garden that has increased our home's value and brings us joy every day. Highly recommended!"</p>
-                    <div class="review-author-m2x9">- Robert Thompson</div>
+                <div class="sustainability-card-k2w6">
+                    <h3>💧 Water Conservation</h3>
+                    <p>Smart irrigation systems, drought-tolerant plants, and rainwater harvesting techniques help reduce water consumption while maintaining beautiful gardens.</p>
                 </div>
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"The team's expertise in sustainable gardening is impressive. They created a low-maintenance, drought-resistant garden that's both beautiful and environmentally friendly."</p>
-                    <div class="review-author-m2x9">- Lisa Chen</div>
+                <div class="sustainability-card-k2w6">
+                    <h3>🐝 Wildlife Support</h3>
+                    <p>Our designs incorporate native plants and habitat features that support local wildlife, creating gardens that contribute to biodiversity and ecosystem health.</p>
                 </div>
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"From design to installation, everything was handled professionally. Our herb garden is thriving, and we love having fresh ingredients right outside our kitchen!"</p>
-                    <div class="review-author-m2x9">- Michael Rodriguez</div>
+                <div class="sustainability-card-k2w6">
+                    <h3>🌱 Organic Practices</h3>
+                    <p>We use organic fertilizers, natural pest control methods, and soil-building techniques that promote long-term garden health without harmful chemicals.</p>
                 </div>
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"Oviantotoday exceeded our expectations. They listened to our needs and created a garden that perfectly fits our lifestyle. The ongoing maintenance tips have been invaluable."</p>
-                    <div class="review-author-m2x9">- Amanda Foster</div>
+                <div class="sustainability-card-k2w6">
+                    <h3>♻️ Waste Reduction</h3>
+                    <p>Composting programs, plant material recycling, and minimal packaging approaches help reduce waste and create closed-loop garden systems.</p>
                 </div>
-                <div class="review-card-y8t5">
-                    <div class="review-stars-k7n4">★★★★★</div>
-                    <p>"Outstanding work on our commercial property. The landscape design has received numerous compliments from clients and has really enhanced our business image."</p>
-                    <div class="review-author-m2x9">- David Park</div>
+                <div class="sustainability-card-k2w6">
+                    <h3>🌿 Carbon Sequestration</h3>
+                    <p>Strategic tree and shrub placement, along with healthy soil practices, help your garden actively remove carbon dioxide from the atmosphere.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section-u6i2">
-        <div class="container-max-z1y4">
-            <h2 class="section-title-n7m2">Get In Touch</h2>
-            <div class="contact-grid-o4e8">
-                <div class="contact-info-z7j6">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item-n8k5">
-                        <div class="contact-icon-p9l4">📍</div>
-                        <div>
-                            <strong>Address:</strong><br>
-                            2847 Greenwood Avenue<br>
-                            Springfield, IL 62704
-                        </div>
-                    </div>
-                    <div class="contact-item-n8k5">
-                        <div class="contact-icon-p9l4">📞</div>
-                        <div>
-                            <strong>Phone:</strong><br>
-                            <a href="tel:+15559876543" class="phone-link-q3m7">(555) 987-6543</a>
-                        </div>
-                    </div>
-                    <div class="contact-item-n8k5">
-                        <div class="contact-icon-p9l4">✉️</div>
-                        <div>
-                            <strong>Email:</strong><br>
-                            info@oviantotoday.com
-                        </div>
-                    </div>
-                    <div class="contact-item-n8k5">
-                        <div class="contact-icon-p9l4">🕒</div>
-                        <div>
-                            <strong>Hours:</strong><br>
-                            Mon-Fri: 8:00 AM - 6:00 PM<br>
-                            Sat: 9:00 AM - 4:00 PM<br>
-Sun: By appointment
+    <section id="plant-care" class="plant-care-section-y8n3">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">Essential Plant Care Tips</h2>
+            <div class="care-tips-grid-s6q7">
+                <div class="care-tip-card-m9x4">
+                    <h3>Watering Wisdom</h3>
+                    <p>Deep, infrequent watering encourages strong root development. Water early morning to reduce evaporation and prevent fungal diseases. Check soil moisture before watering.</p>
+                </div>
+                <div class="care-tip-card-m9x4">
+                    <h3>Soil Health</h3>
+                    <p>Healthy soil is the foundation of any successful garden. Regular composting, mulching, and avoiding soil compaction will keep your plants thriving year after year.</p>
+                </div>
+                <div class="care-tip-card-m9x4">
+                    <h3>Pruning Practices</h3>
+                    <p>Proper pruning timing and techniques vary by plant type. Remove dead, diseased, or crossing branches first, then shape for aesthetics and air circulation.</p>
+                </div>
+                <div class="care-tip-card-m9x4">
+                    <h3>Seasonal Feeding</h3>
+                    <p>Different plants have varying nutritional needs throughout the growing season. Slow-release organic fertilizers provide steady nutrition without burning roots.</p>
+                </div>
+                <div class="care-tip-card-m9x4">
+                    <h3>Pest Prevention</h3>
+                    <p>Encourage beneficial insects, maintain plant health, and use integrated pest management approaches to prevent problems before they start.</p>
+                </div>
+                <div class="care-tip-card-m9x4">
+                    <h3>Mulching Benefits</h3>
+                    <p>Organic mulch conserves moisture, suppresses weeds, regulates soil temperature, and gradually improves soil structure as it decomposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section-l8p4">
+        <div class="container-wrapper-u3k7">
+            <h2 class="section-title-p5w8">What Our Clients Say</h2>
+            <div class="testimonials-grid-n6w9">
+                <div class="testimonial-card-s4r7">
+                    <p class="testimonial-text-g2k5">"Orvantatoday transformed our backyard into a stunning oasis. Their attention to detail and plant knowledge is exceptional. We now have a garden that looks beautiful year-round and requires minimal maintenance."</p>
+                    <div class="testimonial-author-t7n3">- Sarah Mitchell, Homeowner</div>
+                </div>
+                <div class="testimonial-card-s4r7">
+                    <p class="testimonial-text-g2k5">"The team at Orvantatoday created a perfect outdoor space for our restaurant. The herb garden not only looks amazing but provides fresh ingredients for our kitchen. Our customers love dining surrounded by such beautiful landscaping."</p>
+<div class="testimonial-author-t7n3">- Marcus Rodriguez, Restaurant Owner</div>
 </div>
+<div class="testimonial-card-s4r7">
+<p class="testimonial-text-g2k5">"Working with Orvantatoday was a pleasure from start to finish. They listened to our ideas and created a design that exceeded our expectations. The native plant garden attracts so many birds and butterflies!"</p>
+<div class="testimonial-author-t7n3">- Jennifer Chen, Garden Enthusiast</div>
 </div>
+<div class="testimonial-card-s4r7">
+<p class="testimonial-text-g2k5">"Our office complex looks incredible thanks to Orvantatoday's landscape design. The low-maintenance plantings and efficient irrigation system have saved us money while creating a welcoming environment for employees and visitors."</p>
+<div class="testimonial-author-t7n3">- David Thompson, Property Manager</div>
 </div>
-<div class="contact-info-z7j6">
-<h3>Service Areas</h3>
-<p>We proudly serve the following areas and surrounding communities:</p>
-<ul style="margin-top: 1rem; line-height: 1.8;">
-<li>Springfield and surrounding areas</li>
-<li>Decatur region</li>
-<li>Bloomington-Normal</li>
-<li>Champaign-Urbana</li>
-<li>Peoria metropolitan area</li>
-<li>Lincoln and Logan County</li>
-</ul>
-<p style="margin-top: 1.5rem;">For projects outside these areas, please contact us to discuss travel arrangements and availability.</p>
+<div class="testimonial-card-s4r7">
+<p class="testimonial-text-g2k5">"I thought my shady backyard was hopeless until Orvantatoday showed me what was possible. Now I have a lush, green retreat that I enjoy every morning with my coffee. Their expertise with shade plants is remarkable."</p>
+<div class="testimonial-author-t7n3">- Lisa Anderson, Homeowner</div>
+</div>
+<div class="testimonial-card-s4r7">
+<p class="testimonial-text-g2k5">"The water feature and pollinator garden that Orvantatoday designed for us has become the centerpiece of our property. We love watching the bees and butterflies, and the sound of water is so relaxing."</p>
+<div class="testimonial-author-t7n3">- Robert and Mary Johnson, Retirees</div>
 </div>
 </div>
 </div>
 </section>
-<footer class="footer-main-t1r8">
-    <div class="footer-content-v5s2">
-        <div class="footer-section-w9x4">
-            <h3>Oviantotoday</h3>
-            <p>Creating beautiful, sustainable gardens that enhance your outdoor living experience. Professional garden design and landscaping services you can trust.</p>
-        </div>
-        <div class="footer-section-w9x4">
-            <h3>Quick Links</h3>
-            <ul style="list-style: none; line-height: 1.8;">
-                <li><a href="#services" style="color: #90c695; text-decoration: none;">Garden Services</a></li>
-                <li><a href="#about" style="color: #90c695; text-decoration: none;">About Us</a></li>
-                <li><a href="#sustainability" style="color: #90c695; text-decoration: none;">Sustainability</a></li>
-                <li><a href="#process" style="color: #90c695; text-decoration: none;">Our Process</a></li>
-                <li><a href="#reviews" style="color: #90c695; text-decoration: none;">Client Reviews</a></li>
-            </ul>
-        </div>
-        <div class="footer-section-w9x4">
-            <h3>Services</h3>
-            <ul style="list-style: none; line-height: 1.8;">
-                <li>Garden Planning & Design</li>
-                <li>Landscape Installation</li>
-                <li>Plant Selection & Care</li>
-                <li>Water Feature Installation</li>
-                <li>Seasonal Maintenance</li>
-                <li>Tree Care Services</li>
-            </ul>
-        </div>
-        <div class="footer-section-w9x4">
-            <h3>Legal</h3>
-            <ul style="list-style: none; line-height: 1.8;">
-                <li><a href="#" onclick="openModal('privacy')" style="color: #90c695; text-decoration: none;">Privacy Policy</a></li>
-                <li><a href="#" onclick="openModal('terms')" style="color: #90c695; text-decoration: none;">Terms of Service</a></li>
-            </ul>
-            <div style="margin-top: 1rem;">
-                <p><strong>Contact:</strong></p>
-                <p><a href="tel:+15559876543" class="phone-link-q3m7">(555) 987-6543</a></p>
-                <p>info@oviantotoday.com</p>
+<section id="contact" class="contact-section-u9q8">
+    <div class="container-wrapper-u3k7">
+        <h2 class="section-title-p5w8">Get In Touch</h2>
+        <div class="contact-grid-m5x1">
+            <div class="contact-info-p8w4">
+                <h3>Contact Information</h3>
+                <div class="contact-item-d6y2">
+                    <span>📍</span>
+                    <div>
+                        <strong>Address:</strong><br>
+                        2847 Greenwood Avenue<br>
+                        Springfield, IL 62704
+                    </div>
+                </div>
+                <div class="contact-item-d6y2">
+                    <span>📞</span>
+                    <div>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+15559876543" class="phone-link-c8r5">(555) 987-6543</a>
+                    </div>
+                </div>
+                <div class="contact-item-d6y2">
+                    <span>✉️</span>
+                    <div>
+                        <strong>Email:</strong><br>
+                        info@orvantatoday.com
+                    </div>
+                </div>
+                <div class="contact-item-d6y2">
+                    <span>🕒</span>
+                    <div>
+                        <strong>Business Hours:</strong><br>
+                        Monday - Friday: 8:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 4:00 PM<br>
+                        Sunday: Closed
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-k3v7">
+                <h3>Request a Consultation</h3>
+                <form>
+                    <div class="form-group-j9s5">
+                        <input type="text" class="form-input-a7f4" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group-j9s5">
+                        <input type="email" class="form-input-a7f4" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group-j9s5">
+                        <input type="tel" class="form-input-a7f4" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group-j9s5">
+                        <textarea class="form-textarea-h2k8" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button-primary-h8j4">Send Message</button>
+                </form>
             </div>
         </div>
     </div>
-    <div class="footer-bottom-a6c1">
-        <p>© 2024 Oviantotoday. All rights reserved. Professional garden design and landscaping services.</p>
+</section>
+
+<footer class="footer-section-x4n6">
+    <div class="container-wrapper-u3k7">
+        <div class="footer-content-w7q3">
+            <div class="footer-column-r5t9">
+                <h4 class="footer-title-b8m1">Orvantatoday</h4>
+                <p>Professional garden design and landscaping services creating beautiful, sustainable outdoor spaces for residential and commercial clients.</p>
+                <p><strong>License #:</strong> LND-2024-8847</p>
+            </div>
+            <div class="footer-column-r5t9">
+                <h4 class="footer-title-b8m1">Services</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#services" class="footer-link-z3p7">Garden Design</a></li>
+                    <li><a href="#services" class="footer-link-z3p7">Plant Installation</a></li>
+                    <li><a href="#services" class="footer-link-z3p7">Landscape Architecture</a></li>
+                    <li><a href="#services" class="footer-link-z3p7">Irrigation Systems</a></li>
+                    <li><a href="#services" class="footer-link-z3p7">Garden Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-r5t9">
+                <h4 class="footer-title-b8m1">Quick Links</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#about" class="footer-link-z3p7">About Us</a></li>
+                    <li><a href="#history" class="footer-link-z3p7">Our History</a></li>
+                    <li><a href="#sustainability" class="footer-link-z3p7">Sustainability</a></li>
+                    <li><a href="#plant-care" class="footer-link-z3p7">Plant Care Tips</a></li>
+                    <li><a href="javascript:void(0)" onclick="openModal('privacy')" class="footer-link-z3p7">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openModal('terms')" class="footer-link-z3p7">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-r5t9">
+                <h4 class="footer-title-b8m1">Contact Info</h4>
+                <p>2847 Greenwood Avenue<br>Springfield, IL 62704</p>
+                <p>Phone: <a href="tel:+15559876543" class="footer-link-z3p7">(555) 987-6543</a></p>
+                <p>Email: info@orvantatoday.com</p>
+                <p>Emergency: <a href="tel:+15559876544" class="footer-link-z3p7">(555) 987-6544</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom-l6x4">
+            <p>© 2024 Orvantatoday. All rights reserved. | Professional Garden Design & Landscaping Services</p>
+        </div>
     </div>
 </footer>
 
 <!-- Privacy Policy Modal -->
-<div id="privacy-modal" class="modal-overlay-d8f7">
-    <div class="modal-content-g2h9">
-        <button class="modal-close-i4j3" onclick="closeModal('privacy')">×</button>
+<div id="privacy-modal" class="modal-overlay-q9w2">
+    <div class="modal-content-v5k8">
+        <span class="modal-close-n7j4" onclick="closeModal('privacy')">×</span>
         <h2>Privacy Policy</h2>
-        <p><strong>Last updated: January 2024</strong></p>
+        <p><strong>Last Updated:</strong> January 1, 2024</p>
         
         <h3>Information We Collect</h3>
-        <p>At Oviantotoday, we collect information you provide directly to us, such as when you contact us for garden design services, request consultations, or communicate with our team. This may include your name, email address, phone number, property address, and project details.</p>
+        <p>Orvantatoday collects information you provide directly to us, such as when you request a consultation, subscribe to our newsletter, or contact us for services. This may include your name, email address, phone number, property address, and project details.</p>
         
         <h3>How We Use Your Information</h3>
         <p>We use the information we collect to:</p>
         <ul>
             <li>Provide garden design and landscaping services</li>
             <li>Communicate with you about your projects</li>
-            <li>Send you updates about our services</li>
+            <li>Send you updates about our services (with your consent)</li>
             <li>Improve our website and services</li>
             <li>Comply with legal obligations</li>
         </ul>
@@ -827,46 +871,52 @@ Sun: By appointment
         <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share information with trusted service providers who assist us in operating our website and conducting our business.</p>
         
         <h3>Data Security</h3>
-        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+        
+        <h3>Your Rights</h3>
+        <p>You have the right to access, update, or delete your personal information. You may also opt out of receiving promotional communications from us at any time.</p>
         
         <h3>Contact Us</h3>
-        <p>If you have questions about this Privacy Policy, please contact us at info@oviantotoday.com or (555) 987-6543.</p>
+        <p>If you have questions about this Privacy Policy, please contact us at info@orvantatoday.com or (555) 987-6543.</p>
     </div>
 </div>
 
 <!-- Terms of Service Modal -->
-<div id="terms-modal" class="modal-overlay-d8f7">
-    <div class="modal-content-g2h9">
-        <button class="modal-close-i4j3" onclick="closeModal('terms')">×</button>
+<div id="terms-modal" class="modal-overlay-q9w2">
+    <div class="modal-content-v5k8">
+        <span class="modal-close-n7j4" onclick="closeModal('terms')">×</span>
         <h2>Terms of Service</h2>
-        <p><strong>Last updated: January 2024</strong></p>
+        <p><strong>Last Updated:</strong> January 1, 2024</p>
         
-        <h3>Acceptance of Terms</h3>
-        <p>By accessing and using Oviantotoday's services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+        <h3>Agreement to Terms</h3>
+        <p>By accessing and using Orvantatoday's services, you agree to be bound by these Terms of Service and all applicable laws and regulations.</p>
         
-        <h3>Service Description</h3>
-        <p>Oviantotoday provides professional garden design, landscaping, and related outdoor space services. Our services include consultation, design development, plant selection, installation, and maintenance guidance.</p>
+        <h3>Services Description</h3>
+        <p>Orvantatoday provides professional garden design, landscaping, and related outdoor space services. All services are subject to availability and our professional assessment of project feasibility.</p>
         
         <h3>Client Responsibilities</h3>
         <p>Clients are responsible for:</p>
         <ul>
-            <li>Providing accurate information about their property and requirements</li>
-            <li>Ensuring access to the work site during agreed-upon times</li>
+            <li>Providing accurate property information and access</li>
             <li>Obtaining necessary permits where required</li>
             <li>Maintaining installed gardens according to provided guidelines</li>
+            <li>Timely payment according to agreed terms</li>
         </ul>
         
         <h3>Service Limitations</h3>
-        <p>Our services are subject to weather conditions, seasonal limitations, and material availability. We will communicate any delays or modifications to project timelines as soon as possible.</p>
+        <p>Our services are subject to weather conditions, seasonal availability of plants, and local regulations. We reserve the right to modify project timelines as necessary for quality and safety.</p>
         
-        <h3>Warranty</h3>
-        <p>We provide a one-year warranty on plant materials and installation workmanship, subject to proper maintenance and care by the client. Natural factors such as extreme weather, pests, or diseases are not covered under warranty.</p>
+        <h3>Warranty and Liability</h3>
+        <p>We provide a limited warranty on plant materials and workmanship as specified in individual service agreements. Our liability is limited to the value of services provided.</p>
         
-        <h3>Limitation of Liability</h3>
-        <p>Oviantotoday's liability is limited to the cost of services provided. We are not liable for indirect, incidental, or consequential damages arising from our services.</p>
+        <h3>Payment Terms</h3>
+        <p>Payment terms are specified in individual service contracts. Late payments may be subject to additional fees as outlined in your service agreement.</p>
+        
+        <h3>Modification of Terms</h3>
+        <p>We reserve the right to modify these terms at any time. Continued use of our services constitutes acceptance of any changes.</p>
         
         <h3>Contact Information</h3>
-        <p>For questions regarding these terms, contact us at info@oviantotoday.com or (555) 987-6543.</p>
+        <p>For questions about these Terms of Service, contact us at info@orvantatoday.com or (555) 987-6543.</p>
     </div>
 </div>
 
@@ -886,43 +936,42 @@ Sun: By appointment
     });
 
     // Modal functions
-    function openModal(modalType) {
-        const modal = document.getElementById(modalType + '-modal');
-        if (modal) {
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
+    function openModal(type) {
+        document.getElementById(type + '-modal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 
-    function closeModal(modalType) {
-        const modal = document.getElementById(modalType + '-modal');
-        if (modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
+    function closeModal(type) {
+        document.getElementById(type + '-modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
     }
 
     // Close modal when clicking outside
-    window.addEventListener('click', function(e) {
-        if (e.target.classList.contains('modal-overlay-d8f7')) {
-            e.target.style.display = 'none';
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal-overlay-q9w2')) {
+            event.target.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
+    });
+
+    // Form submission handler
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will contact you within 24 hours to schedule your consultation.');
+        this.reset();
     });
 
     // Add scroll effect to header
     window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header-nav-x7k9');
+        const header = document.querySelector('.header-nav-container-x7k9');
         if (window.scrollY > 100) {
-            header.style.background = 'linear-gradient(135deg, rgba(45, 80, 22, 0.95), rgba(74, 124, 89, 0.95))';
-            header.style.backdropFilter = 'blur(10px)';
+            header.style.background = 'rgba(45, 80, 22, 0.95)';
         } else {
             header.style.background = 'linear-gradient(135deg, #2d5016, #4a7c59)';
-            header.style.backdropFilter = 'none';
         }
     });
 
-    // Add animation to service cards on scroll
+    // Animate elements on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -937,109 +986,13 @@ Sun: By appointment
         });
     }, observerOptions);
 
-    // Observe service cards and other elements
-    document.querySelectorAll('.service-card-e9r3, .review-card-y8t5, .sustainability-card-p4q2').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(card);
+    // Observe elements for animation
+    document.querySelectorAll('.service-card-t9r6, .testimonial-card-s4r7, .timeline-item-x3v9').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
     });
-
-    // Add mobile menu toggle functionality
-    function toggleMobileMenu() {
-        const navMenu = document.querySelector('.nav-menu-r9t4');
-        navMenu.classList.toggle('mobile-active');
-    }
-
-    // Add mobile menu styles
-    const mobileStyles = `
-        @media (max-width: 768px) {
-            .nav-menu-r9t4.mobile-active {
-                display: flex;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: rgba(45, 80, 22, 0.98);
-                flex-direction: column;
-                padding: 2rem;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            }
-        }
-    `;
-
-    // Add styles to head
-    const styleSheet = document.createElement('style');
-    styleSheet.textContent = mobileStyles;
-    document.head.appendChild(styleSheet);
-
-    // Add loading animation
-    window.addEventListener('load', function() {
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.5s ease';
-        setTimeout(() => {
-            document.body.style.opacity = '1';
-        }, 100);
-    });
-
-    // Add form validation if contact form exists
-    function validateContactForm(form) {
-        const email = form.querySelector('input[type="email"]');
-        const phone = form.querySelector('input[type="tel"]');
-        
-        if (email && !email.value.includes('@')) {
-            alert('Please enter a valid email address');
-            return false;
-        }
-        
-        if (phone && phone.value.length < 10) {
-            alert('Please enter a valid phone number');
-            return false;
-        }
-        
-        return true;
-    }
-
-    // Add click tracking for analytics
-    document.addEventListener('click', function(e) {
-        if (e.target.matches('.cta-button-h8j5')) {
-            // Track CTA button clicks
-            console.log('CTA button clicked');
-        }
-        
-        if (e.target.matches('.phone-link-q3m7')) {
-            // Track phone number clicks
-            console.log('Phone number clicked');
-        }
-    });
-
-    // Add scroll progress indicator
-    function updateScrollProgress() {
-        const scrollTop = window.pageYOffset;
-        const docHeight = document.body.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        
-        let progressBar = document.querySelector('.scroll-progress-bar');
-        if (!progressBar) {
-            progressBar = document.createElement('div');
-            progressBar.className = 'scroll-progress-bar';
-            progressBar.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 0%;
-                height: 3px;
-                background: #90c695;
-                z-index: 9999;
-                transition: width 0.1s ease;
-            `;
-            document.body.appendChild(progressBar);
-        }
-        
-        progressBar.style.width = scrollPercent + '%';
-    }
-
-    window.addEventListener('scroll', updateScrollProgress);
 </script>
-</body>
-</html>
+</body> 
+</html> 
